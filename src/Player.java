@@ -1,4 +1,4 @@
-public class Player {
+public class Player implements Comparable<Player> {
     private final String name;
 
     private Piece piece;
@@ -28,5 +28,10 @@ public class Player {
 
     public String getName() {
         return this.name;
+    }
+
+    @Override
+    public int compareTo(Player player) {
+        return this.name.compareTo(player.name);
     }
 }

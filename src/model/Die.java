@@ -1,3 +1,8 @@
+/*
+ * Name:    Supakrit Pamakama
+ * ID:      6510450968
+ */
+
 package model;
 
 import java.util.Random;
@@ -7,7 +12,7 @@ public class Die {
 
     private int faceValue;
 
-    Die() {
+    public Die() {
         this.faceValue = FACES[0];
     }
 

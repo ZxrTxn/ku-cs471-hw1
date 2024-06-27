@@ -1,9 +1,14 @@
+/*
+ * Name:    Supakrit Pamakama
+ * ID:      6510450968
+ */
+
 package model;
 
 public class Piece {
     private Square location;
 
-    Piece(Square location) {
+    public Piece(Square location) {
         this.location = location;
     }
 

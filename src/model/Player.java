@@ -1,3 +1,8 @@
+/*
+ * Name:    Supakrit Pamakama
+ * ID:      6510450968
+ */
+
 package model;
 
 public class Player implements Comparable<Player> {
@@ -8,7 +13,7 @@ public class Player implements Comparable<Player> {
 
     private Die[] dice;
 
-    Player(String name, Piece piece, Board board, Die[] dice) {
+    public Player(String name, Piece piece, Board board, Die[] dice) {
         this.name = name;
         this.piece = piece;
         this.board = board;

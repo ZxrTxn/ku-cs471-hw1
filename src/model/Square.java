@@ -1,3 +1,8 @@
+/*
+ * Name:    Supakrit Pamakama
+ * ID:      6510450968
+ */
+
 package model;
 
 public class Square implements Comparable<Square> {
@@ -5,7 +10,7 @@ public class Square implements Comparable<Square> {
 
     private final String name;
 
-    Square(int refNumber, String name) {
+    public Square(int refNumber, String name) {
         this.refNumber = refNumber;
         this.name = name;
     }

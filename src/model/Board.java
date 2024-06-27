@@ -1,3 +1,8 @@
+/*
+ * Name:    Supakrit Pamakama
+ * ID:      6510450968
+ */
+
 package model;
 
 import java.util.Set;
@@ -5,7 +10,7 @@ import java.util.Set;
 public class Board {
     private Set<Square> squares;
 
-    Board(Set<Square> squares) {
+    public Board(Set<Square> squares) {
         this.squares = squares;
     }
 

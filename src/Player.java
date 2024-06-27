@@ -13,6 +13,19 @@ public class Player {
         this.dice = dice;
     }
 
+    public void takeTurn() {
+        int fvTot = 0;
+
+        for (int i = 0; i < dice.length; i++) {
+            dice[i].roll();
+            fvTot += dice[i].getFaceValue();
+        }
+
+        Square oldLoc = piece.getLocation();
+        Square newLoc = board.getSquare(oldLoc, fvTot);
+        piece.setLocation(newLoc);
+    }
+
     public String getName() {
         return this.name;
     }

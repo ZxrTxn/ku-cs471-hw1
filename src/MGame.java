@@ -1,4 +1,6 @@
 import java.util.Set;
+import java.util.TreeSet;
+
 import java.util.ArrayList;
 
 public class MGame {
@@ -20,6 +22,7 @@ public class MGame {
         this.roundCnt = 0;
         this.roundNumber = roundNumber;
 
+        this.squares = new TreeSet<>();
         for (int i = 0; i < MGame.SQUARE_NUMBER; i++) {
             this.squares.add(new Square(i + MGame.SQUARE_REFERENCE_OFFSET, ""));
         }
@@ -31,6 +34,7 @@ public class MGame {
             this.dice[i] = new Die();
         }
 
+        this.players = new TreeSet<>();
         for (int i = 0; i < playerNames.size(); i++) {
             this.players.add(new Player(playerNames.get(i), new Piece(this.squares.stream().findFirst().get()), board, dice));
         }

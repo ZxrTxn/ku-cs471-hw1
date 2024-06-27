@@ -1,3 +1,5 @@
+package model;
+
 public class Square implements Comparable<Square> {
     private final int refNumber;
 

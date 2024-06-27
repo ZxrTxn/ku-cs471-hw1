@@ -1,3 +1,5 @@
+package model;
+
 public class Piece {
     private Square location;
 

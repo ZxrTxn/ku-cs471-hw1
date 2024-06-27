@@ -1,3 +1,5 @@
+package model;
+
 public class Player implements Comparable<Player> {
     private final String name;
 

@@ -3,6 +3,12 @@ import java.util.TreeSet;
 
 import java.util.ArrayList;
 
+import model.Die;
+import model.Board;
+import model.Piece;
+import model.Player;
+import model.Square;
+
 public class MGame {
     private static final int DICE_NUMBER = 2;
 

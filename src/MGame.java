@@ -2,10 +2,10 @@ import java.util.Set;
 import java.util.ArrayList;
 
 public class MGame {
-    private static final int SQUARE_NUMBER = 40;
     private static final int DICE_NUMBER = 2;
 
-    private static final int REFERENCE_OFFSET = 0;
+    private static final int SQUARE_NUMBER = 40;
+    private static final int SQUARE_REFERENCE_OFFSET = 0;
 
     private int roundCnt;
     private int roundNumber;
@@ -21,7 +21,7 @@ public class MGame {
         this.roundNumber = roundNumber;
 
         for (int i = 0; i < MGame.SQUARE_NUMBER; i++) {
-            this.squares.add(new Square(i + MGame.REFERENCE_OFFSET, ""));
+            this.squares.add(new Square(i + MGame.SQUARE_REFERENCE_OFFSET, ""));
         }
 
         this.board = new Board(squares);

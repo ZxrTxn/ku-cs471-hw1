@@ -3,7 +3,7 @@
  * ID:      6510450968
  */
 
-package model;
+package util.property.layout;
 
 public class Position {
     private int x;

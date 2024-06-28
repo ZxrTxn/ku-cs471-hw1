@@ -16,7 +16,7 @@ import java.io.IOException;
 
 import java.util.Arrays;
 
-import model.Position;
+import util.property.layout.Position;
 
 public class IOController {
     private static final int SCREEN_WIDTH = 120;

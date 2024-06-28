@@ -79,7 +79,7 @@ public class IOController {
         this.end = new Position(screenWidth - 1, screenHeight - 1);
 
         screenBuffer = new char[screenHeight][screenWidth];
-        this.clear();
+        this.clearBuffer();
 
         this.in = new BufferedReader(new InputStreamReader(in));
         this.out = new PrintStream(out);
@@ -144,7 +144,7 @@ public class IOController {
         }
     }
 
-    public void clear() {
+    public void clearBuffer() {
         Arrays.stream(screenBuffer).forEach(row -> Arrays.fill(row, SPACE));
     }
 

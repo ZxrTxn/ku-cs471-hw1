@@ -6,7 +6,8 @@
 package service.io;
 
 import java.io.InputStream;
-import java.io.BufferedInputStream;
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
 
 import java.io.OutputStream;
 import java.io.PrintStream;
@@ -61,7 +62,7 @@ public class IOController {
     // bottom-right corner of the screen
     private final Position end;
 
-    private final BufferedInputStream in;
+    private final BufferedReader in;
     private final PrintStream out;
 
     private char[][] screenBuffer;
@@ -80,7 +81,7 @@ public class IOController {
         screenBuffer = new char[screenHeight][screenWidth];
         this.clear();
 
-        this.in = new BufferedInputStream(in);
+        this.in = new BufferedReader(new InputStreamReader(in));
         this.out = new PrintStream(out);
     }
 

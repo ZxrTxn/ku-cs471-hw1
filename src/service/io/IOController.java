@@ -148,6 +148,10 @@ public class IOController {
         Arrays.stream(screenBuffer).forEach(row -> Arrays.fill(row, SPACE));
     }
 
+    public void clearScreen() {
+        System.out.println("\u001b[1J");
+    }
+
     public void close() throws IOException {
         in.close();
         out.close();

@@ -85,6 +85,10 @@ public class IOController {
         this.out = new PrintStream(out);
     }
 
+    public void waitForEnter() throws IOException {
+        while (Character.compare((char) in.read(), NEW_LINE) != 0);
+    }
+
     private boolean isOverflow(Position position) {
         return !(position.getX() >= this.start.getX() && position.getX() <= this.end.getX()) &&
                 (position.getY() >= this.start.getY() && position.getY() <= this.end.getY());

@@ -18,7 +18,7 @@ import java.util.Arrays;
 
 import property.layout.Position;
 
-public class IOController {
+public class Controller {
     private static final int SCREEN_WIDTH = 120;
     private static final int SCREEN_HEIGHT = 30;
     
@@ -67,11 +67,11 @@ public class IOController {
 
     private char[][] screenBuffer;
 
-    public IOController(InputStream in, OutputStream out) {
+    public Controller(InputStream in, OutputStream out) {
         this(SCREEN_WIDTH, SCREEN_HEIGHT, in, out);
     }
 
-    public IOController(int screenWidth, int screenHeight, InputStream in, OutputStream out) {
+    public Controller(int screenWidth, int screenHeight, InputStream in, OutputStream out) {
         this.screenWidth = Math.max(screenWidth, MIN_SCREEN_WIDTH);
         this.screenHeight = Math.max(screenHeight, MIN_SCREEN_HEIGHT);
 
@@ -112,7 +112,7 @@ public class IOController {
     }
 
     public void alert(Exception e) {
-        alert(IOController.AlertType.ERROR, e.getMessage());
+        alert(Controller.AlertType.ERROR, e.getMessage());
     }
 
     public void alert(AlertType type, String message) {

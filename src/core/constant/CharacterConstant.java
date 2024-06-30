@@ -19,4 +19,8 @@ public final class CharacterConstant {
     public static final char BORDER_RIGHT = VERTICAL_BORDER;
     public static final char BORDER_BOTTOM = HORIZONTAL_BORDER;
     public static final char BORDER_LEFT = VERTICAL_BORDER;
+
+    public static final char TRANSPARENT = SPACE;
+
+    private CharacterConstant() { }
 }
